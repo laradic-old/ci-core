@@ -30,11 +30,11 @@ class CoreServiceProvider extends ServiceProvider
     ];
 
     protected $singletons = [
-
+        'ci' => CI::class
     ];
 
     protected $aliases = [
-
+        'ci' => CI::class
     ];
 
     public function boot()

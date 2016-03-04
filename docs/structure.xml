@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project title="API Documentation" version="v2.8.5">
   <partials/>
+  <file path="Http/routes.php" generated-path="Http.routes.html" hash="2eae22da7cb80407d82a65b82c8e337f" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+    <source>eJyzsS/IKODiCsovLUm1skpPLdFQV9e05gIAVIkGfw==</source>
+  </file>
   <file path="Providers/DevelopmentServiceProvider.php" generated-path="Providers.DevelopmentServiceProvider.html" hash="de296ad8b41033073a3b0ee96362b94c" package="Default">
     <docblock line="0">
       <description></description>
@@ -52,6 +63,54 @@
     </parse_markers>
     <source>eJzNUUFqwzAQvOsVKgScQtIHOE0KTQ4NtFDIoYcoB1la26KOJFaS2xLy98o2scENpcfuadmd2ZmR7h9saYnmR3CWC6DPHLlUgq23bG0Q2CuaWklAtyAkuGG/C9Ya9GwHWCsBF1hEiYo7RzdQQ2XsEbQfQSh8etDS0dGcnAiNZdF4EB4kndiLNl3Sfbts6s3gewZalCN+mrbKsx7IHjniVy1L1piOdrYSnqCygKzv/n5jA1koMo7jxD8pO8g+lIdGhL+A531zndkSD/Hhuvghq5SgedDCK6NpZoyf3rarE+k1VE6nE18qN19xa/eJMDpXRXKYrwrw0yTO7uTwAcmM5rxycEtvlkvqMcTu1N9qCsEH1It+dh6kJvFYfH/LMV5K087PYth31BbW8c/XgyAUynnA/xRm8PR7oDP5BkY8+E8=</source>
   </file>
+  <file path="Providers/RouteServiceProvider.php" generated-path="Providers.RouteServiceProvider.html" hash="1929a5a01573bfaead65b5a21c8eb06c" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Router">\Illuminate\Routing\Router</namespace-alias>
+    <class final="false" abstract="false" namespace="Laradic\CI\Core\Providers" line="6" package="Default">
+      <extends>\Illuminate\Foundation\Support\Providers\RouteServiceProvider</extends>
+      <name>RouteServiceProvider</name>
+      <full_name>\Laradic\CI\Core\Providers\RouteServiceProvider</full_name>
+      <docblock line="6">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="6" description="Default"/>
+      </docblock>
+      <property static="false" visibility="protected" namespace="Laradic\CI\Core\Providers" line="8" package="Default">
+        <name>$namespace</name>
+        <full_name>\Laradic\CI\Core\Providers\RouteServiceProvider::namespace</full_name>
+        <default>'Laradic\\CI\\Core\\Http\\Controllers'</default>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CI\Core\Providers" line="10" package="Default">
+        <name>map</name>
+        <full_name>\Laradic\CI\Core\Providers\RouteServiceProvider::map()</full_name>
+        <docblock line="10">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$router</name>
+          <default></default>
+          <type>\Illuminate\Routing\Router</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="6" code="PPC:ERR-50005">No summary for class \Laradic\CI\Core\Providers\RouteServiceProvider</error>
+      <error line="10" code="PPC:ERR-50015">Argument $router is missing from the Docblock of map</error>
+      <error line="10" code="PPC:ERR-50008">No summary for method map()</error>
+      <error line="8" code="PPC:ERR-50007">No summary for property $namespace</error>
+    </parse_markers>
+    <source>eJxtkctqwzAQRff6ilkYbENjf0Abd5FSauiiJMuqGFWeJAJZUvUIheJ/ryzXcRadzTykufcIPTyasyGKDegM4wivzLJecLpr6U5bpG9WX0SP1t0TEhxCK2UYhGIe6V4HL9QpZbTxnEvmHKT2gPYiOC7bgN8eVe+A3uw/66B65oVW9BCM0davbvQ/FfJDIIax2iP32EO2cm8hX9An9hmevnhvplp5q6WMunnETBrhUwoOx6D4BAADM8X8DshsymW6NztO8TfeNKdYmOI9v3rnsG0g82fhNs11+HG3ihfljc4UFr+CsAhd99Tuuw4qyOuqqifaOtm4Kv5KZF0WxnKuRzKSXwFFkRY=</source>
+  </file>
   <file path="Providers/WorkbenchServiceProvider.php" generated-path="Providers.WorkbenchServiceProvider.html" hash="00176819a5380d65998acd6b3fa57435" package="Default">
     <docblock line="0">
       <description></description>
@@ -84,7 +143,7 @@
     </parse_markers>
     <source>eJx1i7EKwjAURff3FW8Q+hFVOgQEwUHo4JIlfbm2QZuEl1AV8d8VQTfPeDhn3eUpU3QzSnYC3jt1Pog1O2uSwh40LcFDS0skF1cKH5OeB0SZeugSBN+CcauIvrDtMVxDhf2V9t9DD+I3WVOFVHheSYqnMPZVXcV45w03M3SE+eitprlp6UkvE9NCcQ==</source>
   </file>
-  <file path="CoreServiceProvider.php" generated-path="CoreServiceProvider.html" hash="b306c7a9038e4dcd99dd6c3a538ff904" package="Default">
+  <file path="CoreServiceProvider.php" generated-path="CoreServiceProvider.html" hash="225fcdd97842fd6ca007db511044ef87" package="Default">
     <docblock line="0">
       <description></description>
       <long-description></long-description>
@@ -151,7 +210,7 @@
       <property static="false" visibility="protected" namespace="Laradic\CI\Core" line="32" package="Default">
         <name>$singletons</name>
         <full_name>\Laradic\CI\Core\CoreServiceProvider::singletons</full_name>
-        <default>array()</default>
+        <default>array('ci' =&gt; \Laradic\CI\Core\CI::class)</default>
         <docblock line="32">
           <description></description>
           <long-description></long-description>
@@ -160,7 +219,7 @@
       <property static="false" visibility="protected" namespace="Laradic\CI\Core" line="36" package="Default">
         <name>$aliases</name>
         <full_name>\Laradic\CI\Core\CoreServiceProvider::aliases</full_name>
-        <default>array()</default>
+        <default>array('ci' =&gt; \Laradic\CI\Core\CI::class)</default>
         <docblock line="36">
           <description></description>
           <long-description></long-description>
@@ -195,44 +254,53 @@
       <error line="32" code="PPC:ERR-50007">No summary for property $singletons</error>
       <error line="36" code="PPC:ERR-50007">No summary for property $aliases</error>
     </parse_markers>
-    <source>eJyFkd9LwzAQx9/zV9zDYFtRq4IvnaKwIQwUZNublZKltzbQJiFJhzL2v5v0xyZ1untK7j753vcu948qV4QIWqJRlCG8UE1TzuLpPJ5KjRNCKnPMLiulpLbxEvWWM3zTcstT1I4Kg4AEsMoRSsoFmAYA1RLEV59oZXOpoY2FXDty4YV9kUn1pXmWW4Dp4ThiY7i9vrm76Cx4snDKwrmqI7dWRWFYcnvZ5q+kzuB1viJBSFhBjQE/Sc8y4KdFkRro5cmOeFXn2yKzmMIg5RoeIElm80WSuEl7ZSbFhmfPvEDjsHcYMj6Ej99ct4maIt0OurYmnuEWC6lKFLZnKYrqKeo3J4SZLEvqJ/mpG4Zu6CYfL2WJ7eWMlPuPlIuskfoLMo4o0ErxP0YLTg2eYqq1+yjYVIJZLgWspbSjcV3aHfwPqFLuqaLa7SOKGqYV8KHRVlrU2KRO7k+La8y4sajPNThy/zfZk2880vWc</source>
+    <source>eJyVkVFLwzAQx9/zKe5hsK2oVcGXzqmwIQwUZNublZGltzbQJiFJhzL23U26dtM6Hd5TcvfL/+5/ub1XmSJE0AKNogzhiWqacBaPJvFIahwQUppDdlYqJbWNZ6jXnOGLlmueoHZUGAQkgHmGUFAuwOwAUDVBfPWBljaTGuqYyqUjp17YF5lUH5qnmQUY7Y891ofry6ubs2YET+ZOWbipqsisVVEYFtye1/kLqVN4nsxJEBKWU2PAO2mNDPhuUSQGWnmyIV7VzW2RWUygk3ANQ1gsxpPpYuGctspMihVPH3mOxmGv0GW8C28/uWYTFUWaHTRtTTzGNeZSFShsa6QoqlxUb44IM1kU1Dv5qhuGzvQuH89kgfXlhJT7j4SLdCf1G2QckaOV4nvHyvfwDkaTE01ozqnBfz0ul+5rYVUKZrkUsJTS9vpVabOX6FClnKai2m0winZMLeBDoy21qLBBldweF9eYcmNRn2pw4P5usiWfE+sBgQ==</source>
   </file>
-  <file path="CI.php" generated-path="CI.html" hash="8bf5fabbfb5911b4d947f1a6fba3c0ad" package="Default">
+  <file path="CI.php" generated-path="CI.html" hash="e4920d4232f3a6d3d4e7c15e6a5b9a14" package="Default">
     <docblock line="0">
       <description></description>
       <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
-    <class final="false" abstract="false" namespace="Laradic\CI\Core" line="4" package="Default">
+    <namespace-alias name="Filesystem">\Laradic\Support\Filesystem</namespace-alias>
+    <class final="false" abstract="false" namespace="Laradic\CI\Core" line="6" package="Default">
       <extends/>
       <name>CI</name>
       <full_name>\Laradic\CI\Core\CI</full_name>
-      <docblock line="4">
+      <docblock line="6">
         <description></description>
         <long-description></long-description>
-        <tag name="package" line="4" description="Default"/>
+        <tag name="package" line="6" description="Default"/>
       </docblock>
-      <property static="false" visibility="protected" namespace="Laradic\CI\Core" line="6" package="Default">
+      <property static="false" visibility="protected" namespace="Laradic\CI\Core" line="9" package="Default">
         <name>$fs</name>
         <full_name>\Laradic\CI\Core\CI::fs</full_name>
         <default></default>
-        <docblock line="6">
+        <docblock line="9">
           <description></description>
           <long-description></long-description>
+          <tag name="var" line="9" description="" type="\Laradic\Support\Filesystem" variable="">
+            <type>\Laradic\Support\Filesystem</type>
+          </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CI\Core" line="8" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CI\Core" line="11" package="Default">
         <name>__construct</name>
         <full_name>\Laradic\CI\Core\CI::__construct()</full_name>
-        <docblock line="8">
+        <docblock line="11">
           <description></description>
           <long-description></long-description>
         </docblock>
+        <argument line="0" by_reference="false">
+          <name>$fs</name>
+          <default></default>
+          <type>\Laradic\Support\Filesystem</type>
+        </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CI\Core" line="13" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CI\Core" line="16" package="Default">
         <name>fs</name>
         <full_name>\Laradic\CI\Core\CI::fs()</full_name>
-        <docblock line="13">
+        <docblock line="16">
           <description></description>
           <long-description></long-description>
         </docblock>
@@ -240,12 +308,13 @@
     </class>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="4" code="PPC:ERR-50005">No summary for class \Laradic\CI\Core\CI</error>
-      <error line="8" code="PPC:ERR-50008">No summary for method __construct()</error>
-      <error line="13" code="PPC:ERR-50008">No summary for method fs()</error>
-      <error line="6" code="PPC:ERR-50007">No summary for property $fs</error>
+      <error line="6" code="PPC:ERR-50005">No summary for class \Laradic\CI\Core\CI</error>
+      <error line="11" code="PPC:ERR-50015">Argument $fs is missing from the Docblock of __construct</error>
+      <error line="11" code="PPC:ERR-50008">No summary for method __construct()</error>
+      <error line="16" code="PPC:ERR-50008">No summary for method fs()</error>
+      <error line="9" code="PPC:ERR-50007">No summary for property $fs</error>
     </parse_markers>
-    <source>eJyzsS/IKODKS8xNLS5ITE5V8EksSkzJTI5x9oxxzi9KtebiSs5JLC5WcPbkquZSAIKCovyS1OSS1BQFlbRioDRYrDQpJzNZIa00L7kkMz9PIT4+OT+vuKSoNLlEQxOsohqisBa7+rRidGW1XABc7iyn</source>
+    <source>eJx1jcsKwjAURPf5irvoohakH+ATCkLBndtAiWlCAzUJuTeCSP/dtEUqorMc5pzZHnznmRU3hV5IBWcRRGskr2peuaA2jEVc2kv03gXiJ9MrfCCpWxrIXiBCVbMng5SyKOB4FwH4fwqgKKexD46UJNVCpjG5pi5eeyNBRyvJOAtNI51FClFS/qFIwGraz7djMuoMrvcaYTf7xnL4bdWYf+NBUQx2sbz5gb0Ax5NZdA==</source>
   </file>
   <file path="Console/Kernel.php" generated-path="Console.Kernel.html" hash="1e11adc9f0d7a6f326c3bb3b4f4f68a2" package="Default">
     <docblock line="0">
