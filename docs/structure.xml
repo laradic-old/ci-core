@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="API Documentation" version="v2.8.5">
+  <partials/>
+  <file path="CiCoreServiceProvider.php" generated-path="CiCoreServiceProvider.html" hash="a29c366f19a0c445ca146dfae709e560" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="ServiceProvider">\Laradic\Support\ServiceProvider</namespace-alias>
+    <class final="false" abstract="false" namespace="Laradic\CiCore" line="14" package="Default">
+      <extends>\Laradic\Support\ServiceProvider</extends>
+      <name>CiCoreServiceProvider</name>
+      <full_name>\Laradic\CiCore\CiCoreServiceProvider</full_name>
+      <docblock line="14">
+        <description>The main service provider</description>
+        <long-description></long-description>
+        <tag name="author" line="14" description="Robin Radic"/>
+        <tag name="copyright" line="14" description="Copyright (c) 2015, Laradic"/>
+        <tag name="license" line="14" description="MIT" link="http://mit-license.org"/>
+        <tag name="package" line="14" description="Default"/>
+      </docblock>
+      <property static="false" visibility="protected" namespace="Laradic\CiCore" line="16" package="Default">
+        <name>$dir</name>
+        <full_name>\Laradic\CiCore\CiCoreServiceProvider::dir</full_name>
+        <default>__DIR__</default>
+        <docblock line="16">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" namespace="Laradic\CiCore" line="18" package="Default">
+        <name>$configFiles</name>
+        <full_name>\Laradic\CiCore\CiCoreServiceProvider::configFiles</full_name>
+        <default>array('ci')</default>
+        <docblock line="18">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" namespace="Laradic\CiCore" line="20" package="Default">
+        <name>$commands</name>
+        <full_name>\Laradic\CiCore\CiCoreServiceProvider::commands</full_name>
+        <default>array()</default>
+        <docblock line="20">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" namespace="Laradic\CiCore" line="24" package="Default">
+        <name>$bindings</name>
+        <full_name>\Laradic\CiCore\CiCoreServiceProvider::bindings</full_name>
+        <default>array()</default>
+        <docblock line="24">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" namespace="Laradic\CiCore" line="28" package="Default">
+        <name>$singletons</name>
+        <full_name>\Laradic\CiCore\CiCoreServiceProvider::singletons</full_name>
+        <default>array()</default>
+        <docblock line="28">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" namespace="Laradic\CiCore" line="32" package="Default">
+        <name>$aliases</name>
+        <full_name>\Laradic\CiCore\CiCoreServiceProvider::aliases</full_name>
+        <default>array()</default>
+        <docblock line="32">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CiCore" line="36" package="Default">
+        <name>boot</name>
+        <full_name>\Laradic\CiCore\CiCoreServiceProvider::boot()</full_name>
+        <docblock line="36">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CiCore" line="43" package="Default">
+        <name>register</name>
+        <full_name>\Laradic\CiCore\CiCoreServiceProvider::register()</full_name>
+        <docblock line="43">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="36" code="PPC:ERR-50008">No summary for method boot()</error>
+      <error line="43" code="PPC:ERR-50008">No summary for method register()</error>
+      <error line="16" code="PPC:ERR-50007">No summary for property $dir</error>
+      <error line="18" code="PPC:ERR-50007">No summary for property $configFiles</error>
+      <error line="20" code="PPC:ERR-50007">No summary for property $commands</error>
+      <error line="24" code="PPC:ERR-50007">No summary for property $bindings</error>
+      <error line="28" code="PPC:ERR-50007">No summary for property $singletons</error>
+      <error line="32" code="PPC:ERR-50007">No summary for property $aliases</error>
+    </parse_markers>
+    <source>eJyFkNFLwzAQxt/zV9zDYFtRq4IvnaIwEQYKsu3NScnSW3vQJiFJhzL2v5u03Qaj6j2l3/363Xd3/6gLzZjkFVrNBcIrNzwjsZrSVBmcMFbbk7iotVbGrRZotiTw3agtZWg8FUcRi2BZIFScJNgWAN0RLHSfeO0KZaCruVp7ch6MQ1Mo/W0oLxzA9PgciTHcXt/cXRwiBLL0ztKnaqpwTidxXJG77PQrZXJ4my1ZFDNRcmuh3eUsNOCXQ5lZONPZjgVfn9yhcJjBICMDD5Cmz7N5mvpdz9pCyQ3lL1Si9dgHDAUN4bOPqyoeBnqIHY4Qx37bVl8tVIXdR5I0yRusx8ofLiOZt1a/QdYTJTol/8Z4SdxiH1Ov/UVhU0vhSElYK+VG46a1O+YfcK39r5oblC5JWqYzCGXQ1UY22KQR9/3mBnOyDs1/A07c30P27AeFmtlF</source>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="global" full_name="global"/>
+  <namespace name="Laradic" full_name="Laradic">
+    <namespace name="CiCore" full_name="Laradic\CiCore"/>
+  </namespace>
+  <deprecated count="0"/>
+</project>

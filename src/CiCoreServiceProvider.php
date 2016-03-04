@@ -15,7 +15,7 @@ class CiCoreServiceProvider extends ServiceProvider
 {
     protected $dir = __DIR__;
 
-    protected $configFiles = [ 'laradic.ci-core' ];
+    protected $configFiles = [ 'ci' ];
 
     protected $commands = [
         // Commands\SomeCommand::class
@@ -33,13 +33,15 @@ class CiCoreServiceProvider extends ServiceProvider
 
     ];
 
-    public function boot(){
+    public function boot()
+    {
         $app = parent::boot();
 
         return $app;
     }
 
-    public function register(){
+    public function register()
+    {
         $app = parent::register();
 
         return $app;

@@ -1,8 +1,6 @@
 {
     "name": "laradic/ci-core",
-    "type": "platform-extension",
     "description": "laradic/ci-core is a laravel package",
-    "repositories": [{"type": "composer", "url": "http://packages.sebwite.nl"}],
     "authors": [
         {
             "name": "Robin Radic",
@@ -12,19 +10,20 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "laradic/support": "1.0.*"
+        "laradic/support": "1.0.*",
+        "block8/phpci": "1.6.*"
     },
-    "require": {
+    "require-dev": {
         "laradic/testing": "1.0.*"
     },
     "autoload": {
         "psr-4": {
-            "Laradic\\CiCore\\": "src/"
+            "Laradic\\CI\\Core\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Laradic\\CiCore\\Tests\\": "tests/"
+            "Laradic\\CI\\Core\\Tests\\": "tests/"
         }
     },
     "extra": {
