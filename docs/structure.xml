@@ -1,17 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project title="API Documentation" version="v2.8.5">
   <partials/>
-  <file path="CiCoreServiceProvider.php" generated-path="CiCoreServiceProvider.html" hash="a29c366f19a0c445ca146dfae709e560" package="Default">
+  <file path="Providers/DevelopmentServiceProvider.php" generated-path="Providers.DevelopmentServiceProvider.html" hash="de296ad8b41033073a3b0ee96362b94c" package="Default">
     <docblock line="0">
       <description></description>
       <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
     <namespace-alias name="ServiceProvider">\Laradic\Support\ServiceProvider</namespace-alias>
-    <class final="false" abstract="false" namespace="Laradic\CiCore" line="14" package="Default">
+    <class final="false" abstract="false" namespace="Laradic\CI\Core\Providers" line="6" package="Default">
       <extends>\Laradic\Support\ServiceProvider</extends>
-      <name>CiCoreServiceProvider</name>
-      <full_name>\Laradic\CiCore\CiCoreServiceProvider</full_name>
+      <name>DevelopmentServiceProvider</name>
+      <full_name>\Laradic\CI\Core\Providers\DevelopmentServiceProvider</full_name>
+      <docblock line="6">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="6" description="Default"/>
+      </docblock>
+      <property static="false" visibility="protected" namespace="Laradic\CI\Core\Providers" line="8" package="Default">
+        <name>$providers</name>
+        <full_name>\Laradic\CI\Core\Providers\DevelopmentServiceProvider::providers</full_name>
+        <default>array(\Laradic\CI\Core\Providers\WorkbenchServiceProvider::class, \Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class, \Barryvdh\Debugbar\ServiceProvider::class, \Sebwite\IdeaMeta\IdeaMetaServiceProvider::class)</default>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CI\Core\Providers" line="16" package="Default">
+        <name>boot</name>
+        <full_name>\Laradic\CI\Core\Providers\DevelopmentServiceProvider::boot()</full_name>
+        <docblock line="16">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CI\Core\Providers" line="28" package="Default">
+        <name>register</name>
+        <full_name>\Laradic\CI\Core\Providers\DevelopmentServiceProvider::register()</full_name>
+        <docblock line="28">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="6" code="PPC:ERR-50005">No summary for class \Laradic\CI\Core\Providers\DevelopmentServiceProvider</error>
+      <error line="16" code="PPC:ERR-50008">No summary for method boot()</error>
+      <error line="28" code="PPC:ERR-50008">No summary for method register()</error>
+      <error line="8" code="PPC:ERR-50007">No summary for property $providers</error>
+    </parse_markers>
+    <source>eJzNUUFqwzAQvOsVKgScQtIHOE0KTQ4NtFDIoYcoB1la26KOJFaS2xLy98o2scENpcfuadmd2ZmR7h9saYnmR3CWC6DPHLlUgq23bG0Q2CuaWklAtyAkuGG/C9Ya9GwHWCsBF1hEiYo7RzdQQ2XsEbQfQSh8etDS0dGcnAiNZdF4EB4kndiLNl3Sfbts6s3gewZalCN+mrbKsx7IHjniVy1L1piOdrYSnqCygKzv/n5jA1koMo7jxD8pO8g+lIdGhL+A531zndkSD/Hhuvghq5SgedDCK6NpZoyf3rarE+k1VE6nE18qN19xa/eJMDpXRXKYrwrw0yTO7uTwAcmM5rxycEtvlkvqMcTu1N9qCsEH1It+dh6kJvFYfH/LMV5K087PYth31BbW8c/XgyAUynnA/xRm8PR7oDP5BkY8+E8=</source>
+  </file>
+  <file path="Providers/WorkbenchServiceProvider.php" generated-path="Providers.WorkbenchServiceProvider.html" hash="00176819a5380d65998acd6b3fa57435" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Laradic\CI\Core\Providers" line="4" package="Default">
+      <extends>\Sebwite\Workbench\WorkbenchServiceProvider</extends>
+      <name>WorkbenchServiceProvider</name>
+      <full_name>\Laradic\CI\Core\Providers\WorkbenchServiceProvider</full_name>
+      <docblock line="4">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="4" description="Default"/>
+      </docblock>
+      <property static="false" visibility="protected" namespace="Laradic\CI\Core\Providers" line="6" package="Default">
+        <name>$configStrategy</name>
+        <full_name>\Laradic\CI\Core\Providers\WorkbenchServiceProvider::configStrategy</full_name>
+        <default>'mergeConfigFrom'</default>
+        <docblock line="6">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="4" code="PPC:ERR-50005">No summary for class \Laradic\CI\Core\Providers\WorkbenchServiceProvider</error>
+      <error line="6" code="PPC:ERR-50007">No summary for property $configStrategy</error>
+    </parse_markers>
+    <source>eJx1i7EKwjAURff3FW8Q+hFVOgQEwUHo4JIlfbm2QZuEl1AV8d8VQTfPeDhn3eUpU3QzSnYC3jt1Pog1O2uSwh40LcFDS0skF1cKH5OeB0SZeugSBN+CcauIvrDtMVxDhf2V9t9DD+I3WVOFVHheSYqnMPZVXcV45w03M3SE+eitprlp6UkvE9NCcQ==</source>
+  </file>
+  <file path="CoreServiceProvider.php" generated-path="CoreServiceProvider.html" hash="b306c7a9038e4dcd99dd6c3a538ff904" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="ServiceProvider">\Laradic\Support\ServiceProvider</namespace-alias>
+    <class final="false" abstract="false" namespace="Laradic\CI\Core" line="14" package="Default">
+      <extends>\Laradic\Support\ServiceProvider</extends>
+      <name>CoreServiceProvider</name>
+      <full_name>\Laradic\CI\Core\CoreServiceProvider</full_name>
       <docblock line="14">
         <description>The main service provider</description>
         <long-description></long-description>
@@ -20,72 +103,81 @@
         <tag name="license" line="14" description="MIT" link="http://mit-license.org"/>
         <tag name="package" line="14" description="Default"/>
       </docblock>
-      <property static="false" visibility="protected" namespace="Laradic\CiCore" line="16" package="Default">
+      <property static="false" visibility="protected" namespace="Laradic\CI\Core" line="16" package="Default">
         <name>$dir</name>
-        <full_name>\Laradic\CiCore\CiCoreServiceProvider::dir</full_name>
+        <full_name>\Laradic\CI\Core\CoreServiceProvider::dir</full_name>
         <default>__DIR__</default>
         <docblock line="16">
           <description></description>
           <long-description></long-description>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="Laradic\CiCore" line="18" package="Default">
+      <property static="false" visibility="protected" namespace="Laradic\CI\Core" line="18" package="Default">
         <name>$configFiles</name>
-        <full_name>\Laradic\CiCore\CiCoreServiceProvider::configFiles</full_name>
+        <full_name>\Laradic\CI\Core\CoreServiceProvider::configFiles</full_name>
         <default>array('ci')</default>
         <docblock line="18">
           <description></description>
           <long-description></long-description>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="Laradic\CiCore" line="20" package="Default">
-        <name>$commands</name>
-        <full_name>\Laradic\CiCore\CiCoreServiceProvider::commands</full_name>
-        <default>array()</default>
+      <property static="false" visibility="protected" namespace="Laradic\CI\Core" line="20" package="Default">
+        <name>$providers</name>
+        <full_name>\Laradic\CI\Core\CoreServiceProvider::providers</full_name>
+        <default>array(\Laradic\CI\Core\Providers\DevelopmentServiceProvider::class)</default>
         <docblock line="20">
           <description></description>
           <long-description></long-description>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="Laradic\CiCore" line="24" package="Default">
-        <name>$bindings</name>
-        <full_name>\Laradic\CiCore\CiCoreServiceProvider::bindings</full_name>
+      <property static="false" visibility="protected" namespace="Laradic\CI\Core" line="24" package="Default">
+        <name>$commands</name>
+        <full_name>\Laradic\CI\Core\CoreServiceProvider::commands</full_name>
         <default>array()</default>
         <docblock line="24">
           <description></description>
           <long-description></long-description>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="Laradic\CiCore" line="28" package="Default">
-        <name>$singletons</name>
-        <full_name>\Laradic\CiCore\CiCoreServiceProvider::singletons</full_name>
+      <property static="false" visibility="protected" namespace="Laradic\CI\Core" line="28" package="Default">
+        <name>$bindings</name>
+        <full_name>\Laradic\CI\Core\CoreServiceProvider::bindings</full_name>
         <default>array()</default>
         <docblock line="28">
           <description></description>
           <long-description></long-description>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="Laradic\CiCore" line="32" package="Default">
-        <name>$aliases</name>
-        <full_name>\Laradic\CiCore\CiCoreServiceProvider::aliases</full_name>
+      <property static="false" visibility="protected" namespace="Laradic\CI\Core" line="32" package="Default">
+        <name>$singletons</name>
+        <full_name>\Laradic\CI\Core\CoreServiceProvider::singletons</full_name>
         <default>array()</default>
         <docblock line="32">
           <description></description>
           <long-description></long-description>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CiCore" line="36" package="Default">
-        <name>boot</name>
-        <full_name>\Laradic\CiCore\CiCoreServiceProvider::boot()</full_name>
+      <property static="false" visibility="protected" namespace="Laradic\CI\Core" line="36" package="Default">
+        <name>$aliases</name>
+        <full_name>\Laradic\CI\Core\CoreServiceProvider::aliases</full_name>
+        <default>array()</default>
         <docblock line="36">
           <description></description>
           <long-description></long-description>
         </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CI\Core" line="40" package="Default">
+        <name>boot</name>
+        <full_name>\Laradic\CI\Core\CoreServiceProvider::boot()</full_name>
+        <docblock line="40">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CiCore" line="43" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CI\Core" line="47" package="Default">
         <name>register</name>
-        <full_name>\Laradic\CiCore\CiCoreServiceProvider::register()</full_name>
-        <docblock line="43">
+        <full_name>\Laradic\CI\Core\CoreServiceProvider::register()</full_name>
+        <docblock line="47">
           <description></description>
           <long-description></long-description>
         </docblock>
@@ -93,21 +185,283 @@
     </class>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="36" code="PPC:ERR-50008">No summary for method boot()</error>
-      <error line="43" code="PPC:ERR-50008">No summary for method register()</error>
+      <error line="40" code="PPC:ERR-50008">No summary for method boot()</error>
+      <error line="47" code="PPC:ERR-50008">No summary for method register()</error>
       <error line="16" code="PPC:ERR-50007">No summary for property $dir</error>
       <error line="18" code="PPC:ERR-50007">No summary for property $configFiles</error>
-      <error line="20" code="PPC:ERR-50007">No summary for property $commands</error>
-      <error line="24" code="PPC:ERR-50007">No summary for property $bindings</error>
-      <error line="28" code="PPC:ERR-50007">No summary for property $singletons</error>
-      <error line="32" code="PPC:ERR-50007">No summary for property $aliases</error>
+      <error line="20" code="PPC:ERR-50007">No summary for property $providers</error>
+      <error line="24" code="PPC:ERR-50007">No summary for property $commands</error>
+      <error line="28" code="PPC:ERR-50007">No summary for property $bindings</error>
+      <error line="32" code="PPC:ERR-50007">No summary for property $singletons</error>
+      <error line="36" code="PPC:ERR-50007">No summary for property $aliases</error>
     </parse_markers>
-    <source>eJyFkNFLwzAQxt/zV9zDYFtRq4IvnaIwEQYKsu3NScnSW3vQJiFJhzL2v5u03Qaj6j2l3/363Xd3/6gLzZjkFVrNBcIrNzwjsZrSVBmcMFbbk7iotVbGrRZotiTw3agtZWg8FUcRi2BZIFScJNgWAN0RLHSfeO0KZaCruVp7ch6MQ1Mo/W0oLxzA9PgciTHcXt/cXRwiBLL0ztKnaqpwTidxXJG77PQrZXJ4my1ZFDNRcmuh3eUsNOCXQ5lZONPZjgVfn9yhcJjBICMDD5Cmz7N5mvpdz9pCyQ3lL1Si9dgHDAUN4bOPqyoeBnqIHY4Qx37bVl8tVIXdR5I0yRusx8ofLiOZt1a/QdYTJTol/8Z4SdxiH1Ov/UVhU0vhSElYK+VG46a1O+YfcK39r5oblC5JWqYzCGXQ1UY22KQR9/3mBnOyDs1/A07c30P27AeFmtlF</source>
+    <source>eJyFkd9LwzAQx9/zV9zDYFtRq4IvnaKwIQwUZNublZKltzbQJiFJhzL2v5v0xyZ1untK7j753vcu948qV4QIWqJRlCG8UE1TzuLpPJ5KjRNCKnPMLiulpLbxEvWWM3zTcstT1I4Kg4AEsMoRSsoFmAYA1RLEV59oZXOpoY2FXDty4YV9kUn1pXmWW4Dp4ThiY7i9vrm76Cx4snDKwrmqI7dWRWFYcnvZ5q+kzuB1viJBSFhBjQE/Sc8y4KdFkRro5cmOeFXn2yKzmMIg5RoeIElm80WSuEl7ZSbFhmfPvEDjsHcYMj6Ej99ct4maIt0OurYmnuEWC6lKFLZnKYrqKeo3J4SZLEvqJ/mpG4Zu6CYfL2WJ7eWMlPuPlIuskfoLMo4o0ErxP0YLTg2eYqq1+yjYVIJZLgWspbSjcV3aHfwPqFLuqaLa7SOKGqYV8KHRVlrU2KRO7k+La8y4sajPNThy/zfZk2880vWc</source>
+  </file>
+  <file path="CI.php" generated-path="CI.html" hash="8bf5fabbfb5911b4d947f1a6fba3c0ad" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Laradic\CI\Core" line="4" package="Default">
+      <extends/>
+      <name>CI</name>
+      <full_name>\Laradic\CI\Core\CI</full_name>
+      <docblock line="4">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="4" description="Default"/>
+      </docblock>
+      <property static="false" visibility="protected" namespace="Laradic\CI\Core" line="6" package="Default">
+        <name>$fs</name>
+        <full_name>\Laradic\CI\Core\CI::fs</full_name>
+        <default></default>
+        <docblock line="6">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CI\Core" line="8" package="Default">
+        <name>__construct</name>
+        <full_name>\Laradic\CI\Core\CI::__construct()</full_name>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CI\Core" line="13" package="Default">
+        <name>fs</name>
+        <full_name>\Laradic\CI\Core\CI::fs()</full_name>
+        <docblock line="13">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="4" code="PPC:ERR-50005">No summary for class \Laradic\CI\Core\CI</error>
+      <error line="8" code="PPC:ERR-50008">No summary for method __construct()</error>
+      <error line="13" code="PPC:ERR-50008">No summary for method fs()</error>
+      <error line="6" code="PPC:ERR-50007">No summary for property $fs</error>
+    </parse_markers>
+    <source>eJyzsS/IKODKS8xNLS5ITE5V8EksSkzJTI5x9oxxzi9KtebiSs5JLC5WcPbkquZSAIKCovyS1OSS1BQFlbRioDRYrDQpJzNZIa00L7kkMz9PIT4+OT+vuKSoNLlEQxOsohqisBa7+rRidGW1XABc7iyn</source>
+  </file>
+  <file path="Console/Kernel.php" generated-path="Console.Kernel.html" hash="1e11adc9f0d7a6f326c3bb3b4f4f68a2" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Laradic\CI\Core\Console" line="4" package="Default">
+      <extends>\Illuminate\Foundation\Console\Kernel</extends>
+      <name>Kernel</name>
+      <full_name>\Laradic\CI\Core\Console\Kernel</full_name>
+      <docblock line="4">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="4" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Laradic\CI\Core\Console" line="12" package="Default">
+        <name>getArtisan</name>
+        <full_name>\Laradic\CI\Core\Console\Kernel::getArtisan()</full_name>
+        <docblock line="12">
+          <description>Get the Artisan application instance.</description>
+          <long-description></long-description>
+          <tag name="return" line="12" description="" type="\Illuminate\Console\Application">
+            <type>\Illuminate\Console\Application</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="4" code="PPC:ERR-50005">No summary for class \Laradic\CI\Core\Console\Kernel</error>
+    </parse_markers>
+    <source>eJx9kN1KxDAQhe/zFHPhRVOs+wCr1aWgFPcRChLSWRtIpyGZVmHpu5vtn/bGc5FhyHfmTPL47BonSLUYnNIIZ+VVbXRVlFXReYwHhc7iUQhtVQjwjp7QAn4zUh2gKq3tW0OKsXrteqoVm45WVzXT4ioERB3SdKqQwhsycINw8myCIlDOWaMnMxgKrEjjwwKvnheP3HvaZa5Bp1//gh+m6nzHqBlruPSkp/GfyEtqIifmOjuizAUSEz6otza548aELFczKuUf7KZllz0FT5AQfkFRFudym+Dc/crhgMRha+NVlg/oQ9wrkVLuEm7Kco/xfQMWXduq+OHrUL308rh5RiH+XW4mRzGKH/CmmXs=</source>
+  </file>
+  <file path="Console/CICLIStarting.php" generated-path="Console.CICLIStarting.html" hash="a14143530c5eb61ed556dd2c1e3d4b58" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Laradic\CI\Core\Console" line="4" package="Default">
+      <extends/>
+      <name>CICLIStarting</name>
+      <full_name>\Laradic\CI\Core\Console\CICLIStarting</full_name>
+      <docblock line="4">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="4" description="Default"/>
+      </docblock>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="4" code="PPC:ERR-50005">No summary for class \Laradic\CI\Core\Console\CICLIStarting</error>
+    </parse_markers>
+    <source>eJyzsS/IKODKS8xNLS5ITE5V8EksSkzJTI5x9oxxzi9KBRJ5xfk5qdZcXMk5icXFCs6ezj6ewSWJRSWZeelc1VxctVwAHggWnA==</source>
+  </file>
+  <file path="Console/CICLI.php" generated-path="Console.CICLI.html" hash="65fc2b8a59800919f808f1ab5df674a3" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Application">\Illuminate\Console\Application</namespace-alias>
+    <namespace-alias name="Container">\Illuminate\Contracts\Container\Container</namespace-alias>
+    <namespace-alias name="Dispatcher">\Illuminate\Contracts\Events\Dispatcher</namespace-alias>
+    <class final="false" abstract="false" namespace="Laradic\CI\Core\Console" line="8" package="Default">
+      <extends>\Illuminate\Console\Application</extends>
+      <name>CICLI</name>
+      <full_name>\Laradic\CI\Core\Console\CICLI</full_name>
+      <docblock line="8">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="8" description="Default"/>
+      </docblock>
+      <property static="false" visibility="protected" namespace="Laradic\CI\Core\Console" line="10" package="Default">
+        <name>$name</name>
+        <full_name>\Laradic\CI\Core\Console\CICLI::name</full_name>
+        <default></default>
+        <docblock line="10">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Laradic\CI\Core\Console" line="11" package="Default">
+        <name>__construct</name>
+        <full_name>\Laradic\CI\Core\Console\CICLI::__construct()</full_name>
+        <docblock line="11">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$laravel</name>
+          <default></default>
+          <type>\Illuminate\Contracts\Container\Container</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$events</name>
+          <default></default>
+          <type>\Illuminate\Contracts\Events\Dispatcher</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$version</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="8" code="PPC:ERR-50005">No summary for class \Laradic\CI\Core\Console\CICLI</error>
+      <error line="11" code="PPC:ERR-50015">Argument $laravel is missing from the Docblock of __construct</error>
+      <error line="11" code="PPC:ERR-50015">Argument $events is missing from the Docblock of __construct</error>
+      <error line="11" code="PPC:ERR-50015">Argument $version is missing from the Docblock of __construct</error>
+      <error line="11" code="PPC:ERR-50008">No summary for method __construct()</error>
+      <error line="10" code="PPC:ERR-50007">No summary for property $name</error>
+    </parse_markers>
+    <source>eJx9UcFqwzAMvfsrdAg0hfYHkq1jZDsEyi67BormqIup6xhbyQaj/z7HGYlhYzrYwnrSe0++e7CdFQav5C1KgiM6bJVsqrqpekfhML7XVAoxeIJa6+GqDPJSaB6t1Uoiq96Uf2DYoWQfM1SG3Jr9g34eyYTrSQVNLLsJK6RG76Gqq2MN9MlkWg8Jt/gSEMK6nkkytZBNnsr5cXgLMDgPRk5QOJ1kEM9ukJwvciDTwfpIegcrL2QUpewgG8n50LyNE2eyKbIzXmjWC/dg6AOaxNIvI/m2XFotulAtilTOKiIZnLCv3Rl3yu8PnvglGM03Px8XNrRJUbP+/eGsHOVxe6+MjpV5L4q40gCO6Ju4iW+037Cs</source>
+  </file>
+  <file path="Console/Commands/HelpCommand.php" generated-path="Console.Commands.HelpCommand.html" hash="5216f1dd9abd1bfd4cb5ba65cb2ef43c" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Laradic\CI\Core\Console\Commands" line="4" package="Default">
+      <extends>\Symfony\Component\Console\Command\HelpCommand</extends>
+      <name>HelpCommand</name>
+      <full_name>\Laradic\CI\Core\Console\Commands\HelpCommand</full_name>
+      <docblock line="4">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="4" description="Default"/>
+      </docblock>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="4" code="PPC:ERR-50005">No summary for class \Laradic\CI\Core\Console\Commands\HelpCommand</error>
+    </parse_markers>
+    <source>eJyzsS/IKODKS8xNLS5ITE5V8EksSkzJTI5x9oxxzi9KBRJ5xfk5IDo3NzEvpdiaiys5J7G4WMEjNacAKqiQWlGSCpRTiAmuzE3Lz6sEqS7Iz0vNK0HXH4Okjauai6uWCwAFdS9L</source>
+  </file>
+  <file path="Console/Commands/Command.php" generated-path="Console.Commands.Command.html" hash="29a234b13837d82300a67b95240e53d7" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="true" namespace="Laradic\CI\Core\Console\Commands" line="4" package="Default">
+      <extends>\Laradic\Support\Console\Command</extends>
+      <name>Command</name>
+      <full_name>\Laradic\CI\Core\Console\Commands\Command</full_name>
+      <docblock line="4">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="4" description="Default"/>
+      </docblock>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="4" code="PPC:ERR-50005">No summary for class \Laradic\CI\Core\Console\Commands\Command</error>
+    </parse_markers>
+    <source>eJyzsS/IKODKS8xNLS5ITE5V8EksSkzJTI5x9oxxzi9KBRJ5xfk5IDo3NzEvpdiaiysxqbikKDG5RCE5J7G4WAEqo5BaUZIKVKAQAzMiuLSgIL+oBN0IrmourlouAFivK5c=</source>
+  </file>
+  <file path="Console/Commands/InstallCommand.php" generated-path="Console.Commands.InstallCommand.html" hash="eab571b45f202ecdc92234b5c21c9d7a" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Laradic\CI\Core\Console\Commands" line="4" package="Default">
+      <extends>\Laradic\CI\Core\Console\Commands\Command</extends>
+      <name>InstallCommand</name>
+      <full_name>\Laradic\CI\Core\Console\Commands\InstallCommand</full_name>
+      <docblock line="4">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="4" description="Default"/>
+        <tag name="inherited_from" description="\Laradic\CI\Core\Console\Commands\Command" refers="\Laradic\CI\Core\Console\Commands\Command" link="/classes/Laradic.CI.Core.Console.Commands.Command.html"/>
+      </docblock>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="4" code="PPC:ERR-50005">No summary for class \Laradic\CI\Core\Console\Commands\InstallCommand</error>
+    </parse_markers>
+    <source>eJyzsS/IKODKS8xNLS5ITE5V8EksSkzJTI5x9oxxzi9KBRJ5xfk5IDo3NzEvpdiaiys5J7G4WMEzr7gkMScHKq6QWlGSCpRWgPK5qrm4arkALRwhCg==</source>
+  </file>
+  <file path="Console/Commands/CICommandTrait.php" generated-path="Console.Commands.CICommandTrait.html" hash="2e5cb8e112247e2de077460e6b57373b" package="Default">
+    <docblock line="0">
+      <description>Part of the CLI PHP packages.</description>
+      <long-description>License and copyright information bundled with this package in the LICENSE file</long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <trait namespace="Laradic\CI\Core\Console\Commands" line="10" package="Default">
+      <name>CICommandTrait</name>
+      <full_name>\Laradic\CI\Core\Console\Commands\CICommandTrait</full_name>
+      <docblock line="10">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="10" description="Default"/>
+      </docblock>
+    </trait>
+    <parse_markers>
+      <error line="10" code="PPC:ERR-50010">No summary for trait ""</error>
+    </parse_markers>
+    <source>eJw1jcEKwjAMhu95ipx3cA+g4KEMLAwZ6HGX2HY2uLWlrYiI724mesnPn3x82e2TT9A2DWCDA+WKccLqHape43AYMJG50dWVjQAr07NxoTikYNHE9Mx89RU5TDEvVDkGvNyDnZ3FB1cvKi5/h1Bfda9Vdzx1OPHsRNkCBFpcEUpulMmyGZUeVcxORihxXnNZ5GXZAtRMXFHp3+q8VngBvOEDWwBDVQ==</source>
   </file>
   <package name="Default" full_name="Default"/>
   <package name="global" full_name="global"/>
   <namespace name="Laradic" full_name="Laradic">
-    <namespace name="CiCore" full_name="Laradic\CiCore"/>
+    <namespace name="CI" full_name="Laradic\CI">
+      <namespace name="Core" full_name="Laradic\CI\Core">
+        <namespace name="Console" full_name="Laradic\CI\Core\Console">
+          <namespace name="Commands" full_name="Laradic\CI\Core\Console\Commands"/>
+        </namespace>
+        <namespace name="Providers" full_name="Laradic\CI\Core\Providers"/>
+      </namespace>
+    </namespace>
   </namespace>
   <deprecated count="0"/>
 </project>

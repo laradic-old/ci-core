@@ -1,6 +1,6 @@
 <?php
 
-namespace Laradic\CiCore;
+namespace Laradic\CI\Core;
 
 use Laradic\Support\ServiceProvider;
 
@@ -11,11 +11,15 @@ use Laradic\Support\ServiceProvider;
 * @copyright  Copyright (c) 2015, Laradic
 * @license      http://mit-license.org MIT
 */
-class CiCoreServiceProvider extends ServiceProvider
+class CoreServiceProvider extends ServiceProvider
 {
     protected $dir = __DIR__;
 
     protected $configFiles = [ 'ci' ];
+
+    protected $providers = [
+        Providers\DevelopmentServiceProvider::class
+    ];
 
     protected $commands = [
         // Commands\SomeCommand::class
