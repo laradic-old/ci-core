@@ -1,0 +1,35 @@
+{
+    "name": "laradic/ci-core",
+    "type": "platform-extension",
+    "description": "laradic/ci-core is a laravel package",
+    "repositories": [{"type": "composer", "url": "http://packages.sebwite.nl"}],
+    "authors": [
+        {
+            "name": "Robin Radic",
+            "email": "robin@radic.nl",
+            "homepage": "http://radic.nl"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laradic/support": "1.0.*"
+    },
+    "require": {
+        "laradic/testing": "1.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laradic\\CiCore\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laradic\\CiCore\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
